@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Login Authentication</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="main_div" id="login_div">
+      <h3>Login Authentication</h3>
+      <input type="email" placeholder="Email..." id="email_field" />
+      <input type="password" placeholder="Password..." id="password_field" />
+      <button onclick="login()">Login</button>
+    </div>
+    <div class="loggedin_div" id="user_div">
+      <h3>YAYYY! You successfully logged-in using Firebase.....</h3>
+      <button onclick="logout()">Logout</button>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+          var firebaseConfig = {
+     apiKey: "AIzaSyCHa7ou_t6b21FQGJe4avYIeyPa5hGYNuI",
+     authDomain: "cecweblogin.firebaseapp.com",
+     projectId: "cecweblogin",
+     storageBucket: "cecweblogin.appspot.com",
+     messagingSenderId: "677981829171",
+     appId: "1:677981829171:web:e82bb3986d07fa12030b46",
+     measurementId: "G-G4Y5YKV1S6"
+  }
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig)
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
